@@ -1,11 +1,14 @@
 {
   "name": "designloop",
-  "owner": { "name": "Mubarak Marafa" },
+  "description": "The designloop skill: capture \u2192 judge \u2192 fix loop for UI polish and art direction.",
+  "owner": {
+    "name": "Mubarak Marafa"
+  },
   "plugins": [
     {
       "name": "designloop",
       "source": "./",
-      "description": "Capture → judge → fix loop that takes an existing UI from a 6 to a 9."
+      "description": "Capture \u2192 judge \u2192 fix loop that takes an existing UI from a 6 to a 9."
     }
   ]
 }
