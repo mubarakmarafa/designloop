@@ -1,0 +1,11 @@
+{
+  "name": "designloop",
+  "owner": { "name": "Mubarak Marafa" },
+  "plugins": [
+    {
+      "name": "designloop",
+      "source": "./",
+      "description": "Capture → judge → fix loop that takes an existing UI from a 6 to a 9."
+    }
+  ]
+}
