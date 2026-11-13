@@ -60,6 +60,11 @@ skills/designloop/
 
 Works best with something that can drive your app (Playwright/CDP for web and Electron, simulator tooling for mobile). Optional: a Figma MCP connector for matching designs, and an image-generation tool for target images.
 
+## Inspiration
+
+- **[dream-loop](https://github.com/achimala/dream-loop)** by [@anshuc](https://x.com/anshuc): a skill that dreams up a target screenshot with image generation, builds toward it, and has a separate critic subagent compare the two until it's satisfied. designloop takes its judging method (a fresh, nitpicky judge every round, with regressions scoring lower) and uses it to polish an existing UI.
+- **[Agents Sucked At UI (Until Today)](https://www.youtube.com/watch?v=xq0eB8vxeqk)** by Theo ([t3.gg](https://t3.gg)): Theo hill-climbs the T3 Code interface by having agents revise the UI, screenshot it and get it scored by several models each round. That video is where the "capture → score → fix → repeat" shape for UI design comes from.
+
 ## License
 
 MIT

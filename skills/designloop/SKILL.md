@@ -5,7 +5,7 @@ description: Run a design loop — an iterative pass where the app's UI is captu
 
 # designloop
 
-A loop that raises the quality of an existing interface by measuring it, not by guessing. Each round: capture the UI the same way, have fresh judges score it against a fixed rubric, fix what they found, repeat. It is modelled on dream-loop's judging method (a fresh judge every round, nitpicky, regressions score lower), applied to UI polish instead of matching a target image.
+A loop that raises the quality of an existing interface by measuring it, not by guessing. Each round: capture the UI the same way, have fresh judges score it against a fixed rubric, fix what they found, repeat. It is modelled on [dream-loop](https://github.com/achimala/dream-loop)'s judging method (a fresh judge every round, nitpicky, regressions score lower), applied to UI polish instead of matching a target image, and on Theo's (t3.gg) hill-climbing approach to UI design in [Agents Sucked At UI (Until Today)](https://www.youtube.com/watch?v=xq0eB8vxeqk).
 
 The loop works because of three separations. Keep them:
 
