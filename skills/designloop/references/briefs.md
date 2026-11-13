@@ -64,3 +64,39 @@ Report: what you changed, evidence paths, items not done or not verified, future
 ```
 
 The foundation implementer (round 1) gets the same brief with a different scope: define the canonical tokens once per theme, build the one shared menu/popover material and motion spec, and apply them to the surfaces that share them. Everyone after builds on that.
+
+## Writing mode briefs
+
+The judge brief above works with "texts" for "surfaces" and "snapshots" for "captures"; add: "Quote the current text and give a proposed rewrite for every item. Read the reader-test reports in <round-N/reader-*.md> and treat each mismatch with the purpose in BRIEF.md as P0. Check every claim against <code / product / sources> and list what you couldn't verify." The terminology and voice auditor and the writers get these:
+
+```
+Reader test for <app / piece>. You are a <audience from BRIEF.md>. You have not seen this before.
+Read <round-N/texts/X> and, if present, its screenshot in place. Don't look anything else up.
+Report: (1) in one or two sentences, what it says; (2) what you would do next; (3) every place you
+hesitated, re-read, or weren't sure what a word or instruction meant; (4) anything that sounded off.
+Write to <round-N/reader-X.md>. Don't suggest rewrites.
+```
+
+```
+Read-only terminology and voice audit for <app / piece> (writing loop). Across the IN-scope texts in
+<RUBRIC.md>, inventory: the terms used for each concept and where; capitalisation, punctuation, number
+and date patterns; recurring message shapes (errors, confirmations, buttons); tone by surface; breaks
+from <style guide>. Report: (1) the inventory with counts, (2) a proposed glossary, one term per
+concept, (3) a short voice sheet with examples from the best existing texts, (4) risky spots —
+strings reused in several places, matched in code/tests/analytics, translated, or legal.
+Write to <round-0/voice-audit.md>. Change nothing.
+```
+
+```
+You are a writer in a writing loop for <app / piece>. Goal: <goal>, as a <line edit | rewrite |
+restructure>. Reader: <audience>; purpose: <what they should know or do>.
+Read first: <BRIEF.md>, <RUBRIC.md>, <RULES.md>, <voice-audit.md> (glossary, voice sheet, risky
+spots), the voice samples in <references/>, and <round-N/judge-X.md>. Your items: <…>, covering <texts>.
+Keep the meaning: no new claims, features, numbers or caveats; flag accuracy problems instead.
+Keep keys, placeholders, plural forms and markup exactly; edit source-language strings only.
+Do not touch: <OUT list, fixed/legal text, texts another writer owns this round>.
+Work on branch <name>. Run the project's checks and i18n tooling, re-render anything with a length
+limit and check it in place, commit. Don't push or merge.
+Report: each change as before → after with a one-line reason, items not done, claims you couldn't
+verify, translations now stale.
+```

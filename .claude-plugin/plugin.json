@@ -1,9 +1,9 @@
 {
   "name": "designloop",
-  "description": "Iteratively raise UI quality: capture the app, have fresh judge subagents score it against a rubric, fix, re-capture, repeat. Professional polish and art direction modes.",
-  "version": "1.0.0",
+  "description": "Iteratively raise UI quality: capture the app, have fresh judge subagents score it against a rubric, fix, re-capture, repeat. Polish, art direction and writing modes.",
+  "version": "1.1.0",
   "author": { "name": "Mubarak Marafa" },
   "repository": "https://github.com/mubarakmarafa/designloop",
   "license": "MIT",
-  "keywords": ["design", "ui", "polish", "skill", "subagents", "figma"]
+  "keywords": ["design", "ui", "polish", "skill", "subagents", "figma", "writing", "copywriting"]
 }
